@@ -16,11 +16,11 @@ const namesInput = prompt("Please enter names separated by commas:", "Zenvo, Eri
 if (!numbersInput || !namesInput) {
     console.log("Please enter both numbers and names to proceed");
 } else {
-    // Convert the input strings into arrays
+    // It convert the input strings into an arrays
     const numbers = numbersInput.split(',').map(Number);
     const names = namesInput.split(',').map(name => name.trim());
 
-    // Merge both arrays
+    // It merge the both arrays
     const mergedArray = numbers.concat(names);
     console.log("Merged Array:", mergedArray);
 
